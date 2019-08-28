@@ -7,7 +7,8 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-@Component
+// If using Component Scanning and Annotations, uncomment below line
+// @Component
 public class GameImpl implements Game {
 
     // == constants ==
@@ -25,11 +26,11 @@ public class GameImpl implements Game {
 
     // == constuctors ==
 
-    /** // Constructor based dependency injection
+    /* // Constructor based dependency injection
     public GameImpl(NumberGenerator numberGenerator) {
         this.numberGenerator = numberGenerator;
     }
-    **/
+    */
 
     // == init ==
     @PostConstruct
@@ -49,10 +50,10 @@ public class GameImpl implements Game {
     }
 
     // == public methods ==
-    /** // Setter based dependency injection
+    /* // Setter based dependency injection
     public void setNumberGenerator(NumberGenerator numberGenerator) {
         this.numberGenerator = numberGenerator;
-    } **/
+    } */
 
     @Override
     public int getNumber() {
