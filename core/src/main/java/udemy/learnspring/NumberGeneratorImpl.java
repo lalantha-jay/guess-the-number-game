@@ -3,7 +3,8 @@ package udemy.learnspring;
 import org.springframework.stereotype.Component;
 import java.util.Random;
 
-@Component("generator")
+// If using Componenet Scanning and Annotations, uncomment below line
+//@Component("generator") // name the bean
 public class NumberGeneratorImpl implements NumberGenerator {
 
     // == fields ==
