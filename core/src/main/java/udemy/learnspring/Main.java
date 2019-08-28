@@ -17,7 +17,8 @@ public class Main {
         ConfigurableApplicationContext context
                 = new ClassPathXmlApplicationContext(CONFIG_LOCATION);
 
-        // get number generator bean from context (container)
+        // get number generator bean from context (container),
+        // via overloading
         NumberGenerator numberGenerator
                 = context.getBean("numberGenerator", NumberGenerator.class);
 
