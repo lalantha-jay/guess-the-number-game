@@ -38,9 +38,6 @@ public class Main {
         // log generated number
         log.info("number = {}", num);
 
-        // get the game bean from context (container)
-        Game game = context.getBean(Game.class);
-
         // get Message Generator bean from context (container),
         // via overloading
         MessageGenerator messageGenerator
