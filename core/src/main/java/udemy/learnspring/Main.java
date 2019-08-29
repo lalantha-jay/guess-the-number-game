@@ -24,7 +24,6 @@ public class Main {
         ConfigurableApplicationContext context
                 = new AnnotationConfigApplicationContext(AppConfig.class);
 
-
         // get number generator bean from context (container),
         // via overloading
         NumberGenerator numberGenerator
@@ -38,6 +37,14 @@ public class Main {
 
         // get the game bean from context (container)
         Game game = context.getBean(Game.class);
+
+        // get Message Generator bean from context (container),
+        // via overloading
+        MessageGenerator messageGenerator
+                = context.getBean(MessageGenerator.class);
+
+        log.info("getMainMessage = {}", messageGenerator.getMainMessage());
+        log.info("getResultMessage = {}", messageGenerator.getResultMessage());
 
         // Initializion method moved to XML file to facilitate
         // bean lifecycle callback via handling by container
