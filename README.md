@@ -12,6 +12,14 @@
 * Using Bean Lifecycle Callbacks
 * XML or Annotation Configuration
 * Autowiring Beans
+* Beans as Components
+* Using Java Annotation Configuration
+* Setup Console Module
+* Application Events Handling
+* Using Qualifiers
+* Creating Custom Annotations
+* Using Properties
+* Constructor Injection
 
 ## Files
 ---
