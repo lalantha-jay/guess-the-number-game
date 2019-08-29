@@ -1,0 +1,11 @@
+#   gitignore file to ignore folders and files
+#   Updated: 06/11/2019
+
+# Ignore the following file patterns
+*~
+.DS_Store
+.iml
+.idea
+
+# Don't track the contents of these folders
+**/target
