@@ -12,6 +12,6 @@ import java.lang.annotation.Target;
 @Qualifier
 public @interface GuessCount {
 
-    
+
 
 }
