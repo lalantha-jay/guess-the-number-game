@@ -95,6 +95,7 @@ public class GameImpl implements Game {
             if (guess < number) {
                 smallest = guess + 1;
             }
+            remainingGuesses--;
         }
 
     }
