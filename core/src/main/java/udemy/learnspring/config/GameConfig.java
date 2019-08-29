@@ -17,10 +17,10 @@ public class GameConfig {
     /* Hardcoded declaration now handled by addition
     of a properties file, and included in GameConfig.
      */
-    @Value("${game.maxNumber}")
+    @Value("${game.maxNumber:20}")
     private int maxNumber;
 
-    @Value("${game.guessCount}")
+    @Value("${game.guessCount:5}")
     private int guessCount;
 
     // == bean methods ==
