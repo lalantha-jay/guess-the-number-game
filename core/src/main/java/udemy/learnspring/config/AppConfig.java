@@ -1,10 +1,13 @@
-package udemy.learnspring;
+package udemy.learnspring.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+import udemy.learnspring.*;
 
 @Configuration
+@Import(GameConfig.class)
 @ComponentScan(basePackages = "udemy.learnspring") // use bean scanning method
 public class AppConfig {
 
